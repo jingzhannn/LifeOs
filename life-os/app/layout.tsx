@@ -1,5 +1,11 @@
+import type { Metadata } from 'next';
+import './globals.css';
+import { Providers } from './providers';
 
-import { Providers } from "./providers";
+export const metadata: Metadata = {
+  title: 'Life OS - Your Intelligent Task Management System',
+  description: 'Organize your life intelligently with AI-powered task recommendations',
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
